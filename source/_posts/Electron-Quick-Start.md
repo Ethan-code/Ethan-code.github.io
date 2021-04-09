@@ -22,6 +22,6 @@ npm install --save-dev electron
 ## 參考資料
 - [Quick Start Guide | Electron][electron-quick-start]
 
----
+<!-- 連結 -->
 [electron.gitignore]: https://github.com/electron/electron/blob/master/.gitignore "electron/.gitignore at master · electron/electron"
 [electron-quick-start]: https://www.electronjs.org/docs/tutorial/quick-start "Quick Start Guide | Electron"
