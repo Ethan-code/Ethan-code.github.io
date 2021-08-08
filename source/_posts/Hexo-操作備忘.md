@@ -15,3 +15,5 @@ tags:
   ```shell
   npm install -g hexo-cli
   ```
+
+1. 目前的 Hexo 網站是以 Github + Travis CI 進行部屬
