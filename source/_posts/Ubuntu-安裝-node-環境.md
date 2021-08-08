@@ -42,3 +42,6 @@ Ubuntu 下安裝選擇透過 nvm 來安裝，可以提供多個 node 環境，�
   ```shell
   node -v
   ```
+
+## 參考資料
+[nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions](https://github.com/nvm-sh/nvm)

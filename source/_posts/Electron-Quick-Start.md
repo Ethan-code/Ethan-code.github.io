@@ -5,19 +5,19 @@ tags: electron
 ---
 
 ## 安裝 Electron
-npm 初始化
+1. npm 初始化
 
-```bash
-npm init
-```
+  ```bash
+  npm init
+  ```
 
-安裝 Electron 做為開發工具
-    
-```bash
-npm install --save-dev electron
-```
+1. 安裝 Electron 做為開發工具
 
-加入 `.gitignore`，可以從 [electron/.gitignore][electron.gitignore] 上下載範本
+  ```bash
+  npm install --save-dev electron
+  ```
+
+1. 加入 `.gitignore`，可以從 [electron/.gitignore][electron.gitignore] 上下載範本
 
 ## 參考資料
 - [Quick Start Guide | Electron][electron-quick-start]
