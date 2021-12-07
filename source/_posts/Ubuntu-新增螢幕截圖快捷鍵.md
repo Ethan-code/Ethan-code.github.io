@@ -13,12 +13,10 @@ tags:
 Gnome 內建就有指令，如果要方便使用，可以透過設定鍵盤快捷鍵的功能來啟動指令
 
 ```shell
+# 在 Ubuntu 20.04 不起作用
 gnome-screenshot -ac
-```
 
-後續測試發現在 Ubuntu 20.04 上無法正常運作，透過將上述指令改為以下指令可以正常運作
-
-```shell
+# 將上述指令改為以下指令可以正常運作
 sh -c "gnome-screenshot -acf /tmp/test && cat /tmp/test | xclip -i -selection clipboard -target image/png"
 ```
 
