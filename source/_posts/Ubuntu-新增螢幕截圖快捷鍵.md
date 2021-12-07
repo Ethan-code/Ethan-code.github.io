@@ -16,6 +16,12 @@ Gnome 內建就有指令，如果要方便使用，可以透過設定鍵盤快�
 gnome-screenshot -ac
 ```
 
+後續測試發現在 Ubuntu 20.04 上無法正常運作，透過將上述指令改為以下指令可以正常運作
+
+```shell
+sh -c "gnome-screenshot -acf /tmp/test && cat /tmp/test | xclip -i -selection clipboard -target image/png"
+```
+
 - `a` 代表區塊 (area) 擷取
 - `c` 代表將擷取的圖片傳送到剪貼簿中
 
@@ -23,3 +29,4 @@ gnome-screenshot -ac
 
 ## 參考資料
 - [Ubuntu Shortcut for Partial Screenshot to Clipboard | by Destan Sarpkaya | Medium](https://medium.com/@dorukdestan/ubuntu-shortcut-for-partial-screenshot-to-clipboard-3a4018e8d3dd)
+- [GNOME Screenshot can't copy to clipboard in Ubuntu 18.04 - Ask Ubuntu](https://askubuntu.com/questions/1196914/gnome-screenshot-cant-copy-to-clipboard-in-ubuntu-18-04)
