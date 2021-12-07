@@ -5,13 +5,6 @@ tags:
 - javascript
 ---
 
-## Todo
-- [ ] 將敘述完整、讓看文章的人可以了解差異
-- [ ] 加上程式範例
-- [ ] 補上 matchMedia 可以使用的格式
-
----
-
 近日認識到 `window.matchMedia` 這個函式，方便在不同寬度下呼叫 callback，想到以往會使用 resize 事件來完成在特定寬度時觸發事件，想知道兩者在實際運用上有何不同
 
 ## 筆記
@@ -23,3 +16,10 @@ tags:
     - 幾乎說明了 resize 與 matchMedia 的差異，感覺我可以把他整篇文章翻譯就好XD
 - [css - What's the most reliable way to integrate javascript with media queries? - Stack Overflow](https://stackoverflow.com/a/29133907)
     - 提到了使用 resize 要使用節流方案來避免防抖動，以前在使用 resize 時的確有遇到此情境
+
+---
+
+## Todo
+- [ ] 將敘述完整、讓看文章的人可以了解差異
+- [ ] 加上程式範例
+- [ ] 補上 matchMedia 可以使用的格式
