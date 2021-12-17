@@ -123,7 +123,7 @@
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -184,10 +184,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-12-09 01:49:18 / Modified: 02:03:43" itemprop="dateCreated datePublished" datetime="2021-12-09T01:49:18+08:00">2021-12-09</time>
+      <time title="Created: 2021-12-09 01:49:18" itemprop="dateCreated datePublished" datetime="2021-12-09T01:49:18+08:00">2021-12-09</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-18 01:44:20" itemprop="dateModified" datetime="2021-12-18T01:44:20+08:00">2021-12-18</time>
+      </span>
 
   
 </div>
@@ -266,10 +272,16 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-12-09 00:59:27 / Modified: 02:03:43" itemprop="dateCreated datePublished" datetime="2021-12-09T00:59:27+08:00">2021-12-09</time>
+      <time title="Created: 2021-12-09 00:59:27" itemprop="dateCreated datePublished" datetime="2021-12-09T00:59:27+08:00">2021-12-09</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-12-18 01:44:20" itemprop="dateModified" datetime="2021-12-18T01:44:20+08:00">2021-12-18</time>
+      </span>
 
   
 </div>
@@ -354,7 +366,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-09 02:03:43" itemprop="dateModified" datetime="2021-12-09T02:03:43+08:00">2021-12-09</time>
+        <time title="Modified: 2021-12-18 01:44:20" itemprop="dateModified" datetime="2021-12-18T01:44:20+08:00">2021-12-18</time>
       </span>
 
   
@@ -437,7 +449,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-09 02:03:43" itemprop="dateModified" datetime="2021-12-09T02:03:43+08:00">2021-12-09</time>
+        <time title="Modified: 2021-12-18 01:44:20" itemprop="dateModified" datetime="2021-12-18T01:44:20+08:00">2021-12-18</time>
       </span>
 
   
@@ -528,7 +540,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-09 02:03:43" itemprop="dateModified" datetime="2021-12-09T02:03:43+08:00">2021-12-09</time>
+        <time title="Modified: 2021-12-18 01:44:20" itemprop="dateModified" datetime="2021-12-18T01:44:20+08:00">2021-12-18</time>
       </span>
 
   
@@ -608,7 +620,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-09 02:03:43" itemprop="dateModified" datetime="2021-12-09T02:03:43+08:00">2021-12-09</time>
+        <time title="Modified: 2021-12-18 01:44:20" itemprop="dateModified" datetime="2021-12-18T01:44:20+08:00">2021-12-18</time>
       </span>
 
   
@@ -624,11 +636,8 @@
           <p>Ubuntu 下安裝選擇透過 nvm 來安裝，可以提供多個 node 環境，方便開發環境不同進行切換。</p>
 <h2 id="安裝-nvm"><a href="#安裝-nvm" class="headerlink" title="安裝 nvm"></a>安裝 nvm</h2><p>參考 <a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm#install--update-script">nvm github 網站</a> 安裝方式</p>
 <ol>
-<li><p>使用 <code>crul</code> 或者 <code>wget</code> 取得安裝的 shell script，這次我選擇使用 wget</p>
+<li><p>使用 <code>crul</code> 或者 <code>wget</code> 取得安裝的 shell script，因為安裝的系統內建沒有 curl，選擇使用 wget 取得腳本並執行</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安裝後的 script 會在 <code>~/.nvm/</code> 資料夾下，執行該資料夾下的 <code>install.sh</code> 進行 nvm 安裝</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh ~/.nvm/install.sh</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>用 <code>nvm -v</code> 確定是否安裝完成，確認安裝完後便可以使用 nvm 了</p>
 </li>
@@ -637,8 +646,8 @@
 <ol>
 <li><p>可以先使用 <code>nvm list-remote</code> 查看目前有哪些版本的 node 環境，目前我想要安裝的是最新版的 LTS 環境，是 <code>v14.17.4</code></p>
 </li>
-<li><p>透過 nvm 定義的 <code>&#39;lts/*&#39;</code> 安裝最新版的 LTS node 環境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install &#x27;lts/*&#x27;</span><br></pre></td></tr></table></figure>
+<li><p>透過 nvm 定義的 <code>&#39;--lts&#39;</code> 安裝最新版的 LTS node 環境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install &#x27;--lts&#x27;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>安裝完成後，透過 <code>-v</code> 可以查看當前安裝版本，確認是否安裝完成</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
@@ -703,7 +712,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-09 02:03:43" itemprop="dateModified" datetime="2021-12-09T02:03:43+08:00">2021-12-09</time>
+        <time title="Modified: 2021-12-18 01:44:20" itemprop="dateModified" datetime="2021-12-18T01:44:20+08:00">2021-12-18</time>
       </span>
 
   
@@ -787,7 +796,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-09 02:03:43" itemprop="dateModified" datetime="2021-12-09T02:03:43+08:00">2021-12-09</time>
+        <time title="Modified: 2021-12-18 01:44:20" itemprop="dateModified" datetime="2021-12-18T01:44:20+08:00">2021-12-18</time>
       </span>
 
   
