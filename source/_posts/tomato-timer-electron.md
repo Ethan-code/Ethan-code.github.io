@@ -1,7 +1,9 @@
 ---
 title: 來做一個 Tomato Timer 吧 (使用 Electron)
 date: 2021-04-10 01:09:07
-tags: electron
+tags:
+- electron
+- side-project
 ---
 
 ## 起因

@@ -10,6 +10,7 @@ tags:
 
 ## 備忘
 1. 新增文章，使用 `hexo new "article title"`，可以使用中文名稱，檔名也會是中文的
+  - 如果沒有全域安裝會有找不到 hexo 的狀況，可以加上 `npx` 執行
 1. 初始化 Hexo 需要安裝全域的 `hexo-cli`，才可以使用例如 `hexo new "article"` 新增文章的指令，安裝腳本如下
 
   ```shell
