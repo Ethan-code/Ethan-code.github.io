@@ -20,30 +20,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"ethan-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Ubuntu 下安裝選擇透過 nvm 來安裝，可以提供多個 node 環境，方便開發環境不同進行切換。 安裝 nvm參考 nvm github 網站 安裝方式  使用 crul 或者 wget 取得安裝的 shell script，因為安裝的系統內建沒有 curl，選擇使用 wget 取得腳本並執行 1wget -qO- https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;nvm-">
+<meta name="description" content="步驟 安裝 Go 的執行環境，到官網下載頁面下載 tar.gz 檔（此次版本為 go1.17.5.linux-amd64.tar.gz） 解壓縮到 &#x2F;usr&#x2F;local&#x2F;go 路徑下12345## 移除原有 go 資料夾rm -rf &#x2F;usr&#x2F;local&#x2F;go## 解壓縮到 &#x2F;usr&#x2F;local 下，因為有建立資料夾的問題，加上 sudo 給權限sudo tar -C &#x2F;usr&#x2F;local -xz">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu 安裝 node 環境">
-<meta property="og:url" content="https://ethan-code.github.io/2021/08/08/Ubuntu-%E5%AE%89%E8%A3%9D-node-%E7%92%B0%E5%A2%83/index.html">
+<meta property="og:title" content="Kubuntu 安裝 Go 環境">
+<meta property="og:url" content="https://ethan-code.github.io/2021/12/21/Kubuntu-%E5%AE%89%E8%A3%9D-Go-%E7%92%B0%E5%A2%83/index.html">
 <meta property="og:site_name" content="Ethan&#39;s Box">
-<meta property="og:description" content="Ubuntu 下安裝選擇透過 nvm 來安裝，可以提供多個 node 環境，方便開發環境不同進行切換。 安裝 nvm參考 nvm github 網站 安裝方式  使用 crul 或者 wget 取得安裝的 shell script，因為安裝的系統內建沒有 curl，選擇使用 wget 取得腳本並執行 1wget -qO- https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;nvm-">
+<meta property="og:description" content="步驟 安裝 Go 的執行環境，到官網下載頁面下載 tar.gz 檔（此次版本為 go1.17.5.linux-amd64.tar.gz） 解壓縮到 &#x2F;usr&#x2F;local&#x2F;go 路徑下12345## 移除原有 go 資料夾rm -rf &#x2F;usr&#x2F;local&#x2F;go## 解壓縮到 &#x2F;usr&#x2F;local 下，因為有建立資料夾的問題，加上 sudo 給權限sudo tar -C &#x2F;usr&#x2F;local -xz">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-08-08T04:56:41.000Z">
+<meta property="article:published_time" content="2021-12-21T12:44:38.000Z">
 <meta property="article:modified_time" content="2021-12-21T13:00:59.955Z">
 <meta property="article:author" content="Ethan Ciou">
+<meta property="article:tag" content="go">
 <meta property="article:tag" content="kubuntu">
-<meta property="article:tag" content="ubuntu">
-<meta property="article:tag" content="nodejs">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://ethan-code.github.io/2021/08/08/Ubuntu-%E5%AE%89%E8%A3%9D-node-%E7%92%B0%E5%A2%83/">
+<link rel="canonical" href="https://ethan-code.github.io/2021/12/21/Kubuntu-%E5%AE%89%E8%A3%9D-Go-%E7%92%B0%E5%A2%83/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh","comments":true,"permalink":"https://ethan-code.github.io/2021/08/08/Ubuntu-%E5%AE%89%E8%A3%9D-node-%E7%92%B0%E5%A2%83/","path":"2021/08/08/Ubuntu-安裝-node-環境/","title":"Ubuntu 安裝 node 環境"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh","comments":true,"permalink":"https://ethan-code.github.io/2021/12/21/Kubuntu-%E5%AE%89%E8%A3%9D-Go-%E7%92%B0%E5%A2%83/","path":"2021/12/21/Kubuntu-安裝-Go-環境/","title":"Kubuntu 安裝 Go 環境"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Ubuntu 安裝 node 環境 | Ethan's Box</title>
+<title>Kubuntu 安裝 Go 環境 | Ethan's Box</title>
   
 
 
@@ -111,7 +110,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-nvm"><span class="nav-number">1.</span> <span class="nav-text">安裝 nvm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%9D-nodejs"><span class="nav-number">2.</span> <span class="nav-text">安裝 nodejs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">3.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%A9%9F"><span class="nav-number">1.</span> <span class="nav-text">步驟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -168,7 +167,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://ethan-code.github.io/2021/08/08/Ubuntu-%E5%AE%89%E8%A3%9D-node-%E7%92%B0%E5%A2%83/">
+    <link itemprop="mainEntityOfPage" href="https://ethan-code.github.io/2021/12/21/Kubuntu-%E5%AE%89%E8%A3%9D-Go-%E7%92%B0%E5%A2%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -181,7 +180,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Ubuntu 安裝 node 環境
+          Kubuntu 安裝 Go 環境
         </h1>
 
         <div class="post-meta-container">
@@ -191,16 +190,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2021-08-08 12:56:41" itemprop="dateCreated datePublished" datetime="2021-08-08T12:56:41+08:00">2021-08-08</time>
+      <time title="Created: 2021-12-21 20:44:38 / Modified: 21:00:59" itemprop="dateCreated datePublished" datetime="2021-12-21T20:44:38+08:00">2021-12-21</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2021-12-21 21:00:59" itemprop="dateModified" datetime="2021-12-21T21:00:59+08:00">2021-12-21</time>
-      </span>
 
   
 </div>
@@ -212,28 +205,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Ubuntu 下安裝選擇透過 nvm 來安裝，可以提供多個 node 環境，方便開發環境不同進行切換。</p>
-<h2 id="安裝-nvm"><a href="#安裝-nvm" class="headerlink" title="安裝 nvm"></a>安裝 nvm</h2><p>參考 <a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm#install--update-script">nvm github 網站</a> 安裝方式</p>
-<ol>
-<li><p>使用 <code>crul</code> 或者 <code>wget</code> 取得安裝的 shell script，因為安裝的系統內建沒有 curl，選擇使用 wget 取得腳本並執行</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用 <code>nvm -v</code> 確定是否安裝完成，確認安裝完後便可以使用 nvm 了</p>
-</li>
+        <h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
+<li>安裝 Go 的執行環境，到官網下載頁面下載 tar.gz 檔（此次版本為 go1.17.5.linux-amd64.tar.gz）</li>
+<li>解壓縮到 <code>/usr/local/go</code> 路徑下<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">## 移除原有 go 資料夾</span></span><br><span class="line">rm -rf /usr/<span class="built_in">local</span>/go</span><br><span class="line"></span><br><span class="line"><span class="comment">## 解壓縮到 /usr/local 下，因為有建立資料夾的問題，加上 sudo 給權限</span></span><br><span class="line">sudo tar -C /usr/<span class="built_in">local</span> -xzf go1.17.5.linux-amd64.tar.gz</span><br></pre></td></tr></table></figure></li>
+<li>加入 go 指令到 PATH 內<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:/usr/<span class="built_in">local</span>/go/bin</span><br></pre></td></tr></table></figure></li>
+<li>執行 <code>go version</code> 確認安裝沒問題</li>
 </ol>
-<h2 id="安裝-nodejs"><a href="#安裝-nodejs" class="headerlink" title="安裝 nodejs"></a>安裝 nodejs</h2><p>完成安裝 nvm 以後，只是安裝完了 node 環境的 <strong>管理器</strong>，實際上還沒安裝任何 node 環境，透過 <code>nvm install &lt;version&gt;</code> 的指令來安裝指定版本的 node 環境</p>
-<ol>
-<li><p>可以先使用 <code>nvm list-remote</code> 查看目前有哪些版本的 node 環境，目前我想要安裝的是最新版的 LTS 環境，是 <code>v14.17.4</code></p>
-</li>
-<li><p>透過 nvm 定義的 <code>&#39;--lts&#39;</code> 安裝最新版的 LTS node 環境</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install &#x27;--lts&#x27;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安裝完成後，透過 <code>-v</code> 可以查看當前安裝版本，確認是否安裝完成</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><p><a target="_blank" rel="noopener" href="https://github.com/nvm-sh/nvm">nvm-sh/nvm: Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions</a></p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://go.dev/doc/install">Download and install - go.dev</a></li>
+</ul>
 
     </div>
 
@@ -243,23 +223,19 @@
 
     <footer class="post-footer">
           <div class="post-tags">
+              <a href="/tags/go/" rel="tag"># go</a>
               <a href="/tags/kubuntu/" rel="tag"># kubuntu</a>
-              <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
-              <a href="/tags/nodejs/" rel="tag"># nodejs</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/04/09/Electron-Quick-Start/" rel="prev" title="Electron Quick Start">
-                  <i class="fa fa-chevron-left"></i> Electron Quick Start
+                <a href="/2021/12/08/%E5%BB%BA%E7%AB%8B-NET-core-%E5%B0%88%E6%A1%88%E8%88%87%E5%9F%B7%E8%A1%8C/" rel="prev" title="建立 .NET core 專案與執行">
+                  <i class="fa fa-chevron-left"></i> 建立 .NET core 專案與執行
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/08/08/Hexo-%E6%93%8D%E4%BD%9C%E5%82%99%E5%BF%98/" rel="next" title="Hexo 操作備忘">
-                  Hexo 操作備忘 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
