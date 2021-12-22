@@ -28,3 +28,4 @@ tags:
 
 ## 參考資料
 - [Download and install - go.dev](https://go.dev/doc/install)
+- [Tutorial: Get started with Go - go.dev](https://go.dev/doc/tutorial/getting-started)
