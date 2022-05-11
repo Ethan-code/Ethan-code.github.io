@@ -19,7 +19,11 @@ tags:
   ```
 5. 測試是否安裝成功：`sudo docker run hello-world`
   - 預設 linux 都會要求管理員權限來執行
-  - 如果不想使用 `sudo` 需要建立群組並將當前使用者加入群組
+  - 如果不想使用 `sudo` 需要建立群組並將當前使用者加入群組（登出才會生效）
+    ```bash
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    ```
 
 ## 參考資料
 - [Install Docker Engine on Ubuntu | Docker Documentation](https://docs.docker.com/engine/install/ubuntu/)
