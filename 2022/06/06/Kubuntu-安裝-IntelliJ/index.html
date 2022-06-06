@@ -20,29 +20,31 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"ethan-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="步驟 安裝相關套件：sudo apt-get install ca-certificates curl gnupg lsb-release 加入 Docker GPG key：curl -fsSL https:&#x2F;&#x2F;download.docker.com&#x2F;linux&#x2F;ubuntu&#x2F;gpg | sudo gpg --dearmor -o &#x2F;usr&#x2F;share&#x2F;keyrings&#x2F;docker-archi">
+<meta name="description" content="(未完成) 環境 Kubuntu 22.04  步驟 到 IntelliJ 官網下載 &lt;tarball&gt;.tar.gz 安裝檔 使用 sudo tar -xzf &lt;ideaIU&gt;.tar.gz -C &#x2F;opt 解壓縮成資料夾   &#x2F;opt 路徑一般是用來放第三方軟體預設安裝位置   到 &#x2F;opt&#x2F;&lt;ideaIU&gt;&#x2F;bin&#x2F; 目錄下，執行 sh idea.sh">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kubuntu 安裝 Docker">
-<meta property="og:url" content="https://ethan-code.github.io/2022/01/18/Kubuntu-%E5%AE%89%E8%A3%9D-Docker/index.html">
+<meta property="og:title" content="Kubuntu-安裝-IntelliJ">
+<meta property="og:url" content="https://ethan-code.github.io/2022/06/06/Kubuntu-%E5%AE%89%E8%A3%9D-IntelliJ/index.html">
 <meta property="og:site_name" content="Ethan&#39;s Box">
-<meta property="og:description" content="步驟 安裝相關套件：sudo apt-get install ca-certificates curl gnupg lsb-release 加入 Docker GPG key：curl -fsSL https:&#x2F;&#x2F;download.docker.com&#x2F;linux&#x2F;ubuntu&#x2F;gpg | sudo gpg --dearmor -o &#x2F;usr&#x2F;share&#x2F;keyrings&#x2F;docker-archi">
+<meta property="og:description" content="(未完成) 環境 Kubuntu 22.04  步驟 到 IntelliJ 官網下載 &lt;tarball&gt;.tar.gz 安裝檔 使用 sudo tar -xzf &lt;ideaIU&gt;.tar.gz -C &#x2F;opt 解壓縮成資料夾   &#x2F;opt 路徑一般是用來放第三方軟體預設安裝位置   到 &#x2F;opt&#x2F;&lt;ideaIU&gt;&#x2F;bin&#x2F; 目錄下，執行 sh idea.sh">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-01-18T13:07:17.000Z">
+<meta property="og:image" content="https://ethan-code.github.io/2022/06/06/Kubuntu-%E5%AE%89%E8%A3%9D-IntelliJ/images/intellij_create_desktop_entry.png">
+<meta property="article:published_time" content="2022-06-06T13:15:57.000Z">
 <meta property="article:modified_time" content="2022-06-06T13:39:22.024Z">
 <meta property="article:author" content="Ethan Ciou">
 <meta property="article:tag" content="kubuntu">
-<meta property="article:tag" content="docker">
+<meta property="article:tag" content="intellij">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ethan-code.github.io/2022/06/06/Kubuntu-%E5%AE%89%E8%A3%9D-IntelliJ/images/intellij_create_desktop_entry.png">
 
 
-<link rel="canonical" href="https://ethan-code.github.io/2022/01/18/Kubuntu-%E5%AE%89%E8%A3%9D-Docker/">
+<link rel="canonical" href="https://ethan-code.github.io/2022/06/06/Kubuntu-%E5%AE%89%E8%A3%9D-IntelliJ/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh","comments":true,"permalink":"https://ethan-code.github.io/2022/01/18/Kubuntu-%E5%AE%89%E8%A3%9D-Docker/","path":"2022/01/18/Kubuntu-安裝-Docker/","title":"Kubuntu 安裝 Docker"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh","comments":true,"permalink":"https://ethan-code.github.io/2022/06/06/Kubuntu-%E5%AE%89%E8%A3%9D-IntelliJ/","path":"2022/06/06/Kubuntu-安裝-IntelliJ/","title":"Kubuntu-安裝-IntelliJ"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Kubuntu 安裝 Docker | Ethan's Box</title>
+<title>Kubuntu-安裝-IntelliJ | Ethan's Box</title>
   
 
 
@@ -110,7 +112,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%A9%9F"><span class="nav-number">1.</span> <span class="nav-text">步驟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">2.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%92%B0%E5%A2%83"><span class="nav-number">1.</span> <span class="nav-text">環境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A5%E9%A9%9F"><span class="nav-number">2.</span> <span class="nav-text">步驟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99"><span class="nav-number">3.</span> <span class="nav-text">參考資料</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -167,7 +169,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh">
-    <link itemprop="mainEntityOfPage" href="https://ethan-code.github.io/2022/01/18/Kubuntu-%E5%AE%89%E8%A3%9D-Docker/">
+    <link itemprop="mainEntityOfPage" href="https://ethan-code.github.io/2022/06/06/Kubuntu-%E5%AE%89%E8%A3%9D-IntelliJ/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -180,7 +182,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Kubuntu 安裝 Docker
+          Kubuntu-安裝-IntelliJ
         </h1>
 
         <div class="post-meta-container">
@@ -190,16 +192,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2022-01-18 21:07:17" itemprop="dateCreated datePublished" datetime="2022-01-18T21:07:17+08:00">2022-01-18</time>
+      <time title="Created: 2022-06-06 21:15:57 / Modified: 21:39:22" itemprop="dateCreated datePublished" datetime="2022-06-06T21:15:57+08:00">2022-06-06</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-06-06 21:39:22" itemprop="dateModified" datetime="2022-06-06T21:39:22+08:00">2022-06-06</time>
-      </span>
 
   
 </div>
@@ -211,21 +207,30 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
-<li>安裝相關套件：<code>sudo apt-get install ca-certificates curl gnupg lsb-release</code></li>
-<li>加入 Docker GPG key：<code>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg</code></li>
-<li>設定 stable repository：<code>echo \ &quot;deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) stable&quot; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</code></li>
-<li>更新 package 清單並安裝<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install docker-ce docker-ce-cli containerd.io</span><br></pre></td></tr></table></figure></li>
-<li>測試是否安裝成功：<code>sudo docker run hello-world</code></li>
+        <p>(未完成)</p>
+<h2 id="環境"><a href="#環境" class="headerlink" title="環境"></a>環境</h2><ul>
+<li>Kubuntu 22.04</li>
+</ul>
+<h2 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h2><ol>
+<li>到 IntelliJ 官網下載 <code>&lt;tarball&gt;.tar.gz</code> 安裝檔</li>
+<li>使用 <code>sudo tar -xzf &lt;ideaIU&gt;.tar.gz -C /opt</code> 解壓縮成資料夾</li>
 </ol>
 <ul>
-<li>預設 linux 都會要求管理員權限來執行</li>
-<li>如果不想使用 <code>sudo</code> 需要建立群組並將當前使用者加入群組（登出才會生效）<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo groupadd docker</span><br><span class="line">sudo usermod -aG docker <span class="variable">$USER</span></span><br></pre></td></tr></table></figure>
-
-</li>
+<li><code>/opt</code> 路徑一般是用來放第三方軟體預設安裝位置</li>
 </ul>
+<ol>
+<li><p>到 <code>/opt/&lt;ideaIU&gt;/bin/</code> 目錄下，執行 <code>sh idea.sh</code></p>
+</li>
+<li><p>建立桌面捷徑，在 Welcome 畫面上點擊齒輪，並點擊 <code>Create Desktop Entry</code></p>
+<p><img src="./images/intellij_create_desktop_entry.png" alt="intellij_create_desktop_entry"></p>
+</li>
+</ol>
 <h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://docs.docker.com/engine/install/ubuntu/">Install Docker Engine on Ubuntu | Docker Documentation</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jetbrains.com/help/idea/installation-guide.html#standalone">Install IntelliJ IDEA | IntelliJ IDEA</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.vixual.net/blog/archives/127">tar 指令的常用語法 | Vixual</a><ul>
+<li>了解 tar 指令參數涵義</li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -237,21 +242,18 @@
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/kubuntu/" rel="tag"># kubuntu</a>
-              <a href="/tags/docker/" rel="tag"># docker</a>
+              <a href="/tags/intellij/" rel="tag"># intellij</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/12/25/Kubuntu-%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%E5%BF%AB%E6%8D%B7%E9%8D%B5/" rel="prev" title="Kubuntu 螢幕截圖快捷鍵">
-                  <i class="fa fa-chevron-left"></i> Kubuntu 螢幕截圖快捷鍵
+                <a href="/2022/05/11/Kubuntu-%E7%B3%BB%E7%B5%B1%E8%A8%AD%E5%AE%9A/" rel="prev" title="Kubuntu 系統設定">
+                  <i class="fa fa-chevron-left"></i> Kubuntu 系統設定
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/01/19/Kubuntu-%E5%AE%89%E8%A3%9D-RPM-Package/" rel="next" title="Kubuntu 安裝 RPM Package">
-                  Kubuntu 安裝 RPM Package <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>

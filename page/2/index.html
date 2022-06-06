@@ -118,12 +118,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -152,6 +152,266 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://ethan-code.github.io/2021/12/08/Ubuntu-%E5%AE%89%E8%A3%9D-NET-core-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Ethan Ciou">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ethan's Box">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/08/Ubuntu-%E5%AE%89%E8%A3%9D-NET-core-%E9%96%8B%E7%99%BC%E7%92%B0%E5%A2%83/" class="post-title-link" itemprop="url">Ubuntu 安裝 .NET core 開發環境</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-12-09 00:59:27" itemprop="dateCreated datePublished" datetime="2021-12-09T00:59:27+08:00">2021-12-09</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-06-06 21:39:22" itemprop="dateModified" datetime="2022-06-06T21:39:22+08:00">2022-06-06</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="安裝"><a href="#安裝" class="headerlink" title="安裝"></a>安裝</h2><h3 id="加入-package-repository-與-signing-key"><a href="#加入-package-repository-與-signing-key" class="headerlink" title="加入 package repository 與 signing key"></a>加入 package repository 與 signing key</h3><p>執行以下指令加入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb</span><br><span class="line">sudo dpkg -i packages-microsoft-prod.deb</span><br><span class="line">rm packages-microsoft-prod.deb</span><br></pre></td></tr></table></figure>
+
+<h3 id="安裝-SDK"><a href="#安裝-SDK" class="headerlink" title="安裝 SDK"></a>安裝 SDK</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update; \</span><br><span class="line">  sudo apt-get install -y apt-transport-https &amp;&amp; \</span><br><span class="line">  sudo apt-get update &amp;&amp; \</span><br><span class="line">  sudo apt-get install -y dotnet-sdk-6.0</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="安裝-runtime"><a href="#安裝-runtime" class="headerlink" title="安裝 runtime"></a>安裝 runtime</h3><p>ASP.NET Core Runtime 提供那些不包含 runtime 的 .NET 應用程式一個執行環境</p>
+<p>如果有安裝 SDK 就不用安裝對應的 runtime</p>
+<blockquote>
+<p>這次已安裝 SDK，不安裝 runtime，故不對安裝過程多做說明</p>
+</blockquote>
+<h2 id="檢查安裝成功"><a href="#檢查安裝成功" class="headerlink" title="檢查安裝成功"></a>檢查安裝成功</h2><p>執行 <code>dotnet --list-sdks</code> 與 <code>dotnet --list-runtimes</code> 查看安裝版本</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/dotnet/core/install/linux-ubuntu#2004-">Install .NET on Ubuntu - .NET | Microsoft Docs</a></li>
+<li><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/dotnet/core/install/how-to-detect-installed-versions?pivots=os-windows">Check installed .NET versions on Windows, Linux, and macOS - .NET | Microsoft Docs</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://ethan-code.github.io/2021/12/07/Ubuntu-%E6%96%B0%E5%A2%9E%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%E5%BF%AB%E6%8D%B7%E9%8D%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Ethan Ciou">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ethan's Box">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/07/Ubuntu-%E6%96%B0%E5%A2%9E%E8%9E%A2%E5%B9%95%E6%88%AA%E5%9C%96%E5%BF%AB%E6%8D%B7%E9%8D%B5/" class="post-title-link" itemprop="url">Ubuntu 新增螢幕截圖快捷鍵</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-12-08 02:05:14" itemprop="dateCreated datePublished" datetime="2021-12-08T02:05:14+08:00">2021-12-08</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-06-06 21:39:22" itemprop="dateModified" datetime="2022-06-06T21:39:22+08:00">2022-06-06</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>在製作文章或者溝通時，常常會有截圖需要，只知道可以透過 PrintScreen 的按鍵去擷取整個畫面，想要有擷取部份畫面的功能</p>
+<h2 id="解決方式"><a href="#解決方式" class="headerlink" title="解決方式"></a>解決方式</h2><p>Gnome 內建就有指令，如果要方便使用，可以透過設定鍵盤快捷鍵的功能來啟動指令</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 在 Ubuntu 20.04 不起作用</span></span><br><span class="line">gnome-screenshot -ac</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 將上述指令改為以下指令可以正常運作</span></span><br><span class="line">sh -c &quot;gnome-screenshot -acf /tmp/test &amp;&amp; cat /tmp/test | xclip -i -selection clipboard -target image/png&quot;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>a</code> 代表區塊 (area) 擷取</li>
+<li><code>c</code> 代表將擷取的圖片傳送到剪貼簿中</li>
+</ul>
+<p>目前鍵盤快捷鍵設定與 garena 的截圖相同，使用 <code>Ctrl</code> + <code>Alt</code> + <code>A</code> 啟動指令</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://medium.com/@dorukdestan/ubuntu-shortcut-for-partial-screenshot-to-clipboard-3a4018e8d3dd">Ubuntu Shortcut for Partial Screenshot to Clipboard | by Destan Sarpkaya | Medium</a></li>
+<li><a target="_blank" rel="noopener" href="https://askubuntu.com/questions/1196914/gnome-screenshot-cant-copy-to-clipboard-in-ubuntu-18-04">GNOME Screenshot can’t copy to clipboard in Ubuntu 18.04 - Ask Ubuntu</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://ethan-code.github.io/2021/12/07/%E6%AF%94%E8%BC%83-window-matchMedia-%E8%88%87-resize-%E4%BA%8B%E4%BB%B6%E5%B7%AE%E7%95%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Ethan Ciou">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ethan's Box">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/12/07/%E6%AF%94%E8%BC%83-window-matchMedia-%E8%88%87-resize-%E4%BA%8B%E4%BB%B6%E5%B7%AE%E7%95%B0/" class="post-title-link" itemprop="url">比較 window.matchMedia 與 resize 事件差異</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-12-08 01:04:19" itemprop="dateCreated datePublished" datetime="2021-12-08T01:04:19+08:00">2021-12-08</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2022-06-06 21:39:22" itemprop="dateModified" datetime="2022-06-06T21:39:22+08:00">2022-06-06</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>近日認識到 <code>window.matchMedia</code> 這個函式，方便在不同寬度下呼叫 callback，想到以往會使用 resize 事件來完成在特定寬度時觸發事件，想知道兩者在實際運用上有何不同</p>
+<h2 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h2><ul>
+<li>resize 會在每次變更寬度時觸發，可能會造成效能問題。如果我們只想關注特定寬度事件，用 <code>window.matchMedia</code> 會是更好的選擇</li>
+<li><code>window.matchMedia</code> 也可以不設定 eventListener 直接使用</li>
+</ul>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://webdevetc.com/blog/matchmedia-events-for-window-resizes/">Why you should use window.matchMedia when checking for window resizes in Javascript - Web dev etc - my software development blog</a><ul>
+<li>幾乎說明了 resize 與 matchMedia 的差異，感覺我可以把他整篇文章翻譯就好XD</li>
+</ul>
+</li>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/a/29133907">css - What’s the most reliable way to integrate javascript with media queries? - Stack Overflow</a><ul>
+<li>提到了使用 resize 要使用節流方案來避免防抖動，以前在使用 resize 時的確有遇到此情境</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="Todo"><a href="#Todo" class="headerlink" title="Todo"></a>Todo</h2><ul>
+<li><input disabled="" type="checkbox"> 將敘述完整、讓看文章的人可以了解差異</li>
+<li><input disabled="" type="checkbox"> 加上程式範例</li>
+<li><input disabled="" type="checkbox"> 補上 matchMedia 可以使用的格式</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -192,7 +452,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-01-19 22:33:59" itemprop="dateModified" datetime="2022-01-19T22:33:59+08:00">2022-01-19</time>
+        <time title="Modified: 2022-06-06 21:39:22" itemprop="dateModified" datetime="2022-06-06T21:39:22+08:00">2022-06-06</time>
       </span>
 
   
@@ -276,7 +536,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-01-19 22:33:59" itemprop="dateModified" datetime="2022-01-19T22:33:59+08:00">2022-01-19</time>
+        <time title="Modified: 2022-06-06 21:39:22" itemprop="dateModified" datetime="2022-06-06T21:39:22+08:00">2022-06-06</time>
       </span>
 
   
@@ -368,7 +628,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-01-19 22:33:59" itemprop="dateModified" datetime="2022-01-19T22:33:59+08:00">2022-01-19</time>
+        <time title="Modified: 2022-06-06 21:39:22" itemprop="dateModified" datetime="2022-06-06T21:39:22+08:00">2022-06-06</time>
       </span>
 
   
@@ -452,7 +712,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-01-19 22:33:59" itemprop="dateModified" datetime="2022-01-19T22:33:59+08:00">2022-01-19</time>
+        <time title="Modified: 2022-06-06 21:39:22" itemprop="dateModified" datetime="2022-06-06T21:39:22+08:00">2022-06-06</time>
       </span>
 
   
