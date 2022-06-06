@@ -6,8 +6,6 @@ tags:
 - intellij
 ---
 
-(未完成)
-
 ## 環境
 - Kubuntu 22.04
 
