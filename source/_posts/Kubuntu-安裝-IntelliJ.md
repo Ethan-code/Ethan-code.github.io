@@ -18,7 +18,7 @@ tags:
 1. 到 `/opt/<ideaIU>/bin/` 目錄下，執行 `sh idea.sh`
 1. 建立桌面捷徑，在 Welcome 畫面上點擊齒輪，並點擊 `Create Desktop Entry`
 
-  ![intellij_create_desktop_entry](./images/intellij_create_desktop_entry.png)
+  {% asset_img intellij_create_desktop_entry.png %}
 
 ## 參考資料
 - [Install IntelliJ IDEA | IntelliJ IDEA](https://www.jetbrains.com/help/idea/installation-guide.html#standalone)
