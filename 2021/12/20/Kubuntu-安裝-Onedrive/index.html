@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.4.0">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
@@ -16,11 +15,12 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"ethan-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="環境 Kubuntu 20.04  步驟 更新 &#x2F;etc&#x2F;apt&#x2F;source.list 檔案，添加以下文字 12# Onedrivedeb https:&#x2F;&#x2F;download.opensuse.org&#x2F;repositories&#x2F;home:&#x2F;npreining:&#x2F;debian-ubuntu-onedrive&#x2F;xUbuntu_20.04&#x2F; .&#x2F;  下載 release key 12# Onedrive">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"ethan-code.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.12.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="環境 Kubuntu 20.04  步驟 更新 &#x2F;etc&#x2F;apt&#x2F;source.list 檔案，添加以下文字 12# Onedrivedeb https:&#x2F;&#x2F;download.opensuse.org&#x2F;repositories&#x2F;home:&#x2F;npreining:&#x2F;debian-ubuntu-onedrive&#x2F;xUbuntu_20.04&#x2F; .&#x2F;  下載 release key 12# Onedrive">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kubuntu-安裝-Onedrive">
 <meta property="og:url" content="https://ethan-code.github.io/2021/12/20/Kubuntu-%E5%AE%89%E8%A3%9D-Onedrive/index.html">
@@ -28,7 +28,7 @@
 <meta property="og:description" content="環境 Kubuntu 20.04  步驟 更新 &#x2F;etc&#x2F;apt&#x2F;source.list 檔案，添加以下文字 12# Onedrivedeb https:&#x2F;&#x2F;download.opensuse.org&#x2F;repositories&#x2F;home:&#x2F;npreining:&#x2F;debian-ubuntu-onedrive&#x2F;xUbuntu_20.04&#x2F; .&#x2F;  下載 release key 12# Onedrive">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-12-20T03:47:57.000Z">
-<meta property="article:modified_time" content="2022-06-06T14:00:16.759Z">
+<meta property="article:modified_time" content="2022-06-06T14:27:53.320Z">
 <meta property="article:author" content="Ethan Ciou">
 <meta property="article:tag" content="kubuntu">
 <meta name="twitter:card" content="summary">
@@ -43,6 +43,7 @@
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Kubuntu-安裝-Onedrive | Ethan's Box</title>
   
+
 
 
 
@@ -67,7 +68,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Ethan's Box</h1>
+      <p class="site-title">Ethan's Box</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">everything inside</p>
@@ -171,11 +172,16 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Ethan Ciou">
-      <meta itemprop="description" content="blog">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Ethan's Box">
+      <meta itemprop="description" content="blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Kubuntu-安裝-Onedrive | Ethan's Box">
+      <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -192,13 +198,13 @@
 
       <time title="Created: 2021-12-20 11:47:57" itemprop="dateCreated datePublished" datetime="2021-12-20T11:47:57+08:00">2021-12-20</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2022-06-06 22:00:16" itemprop="dateModified" datetime="2022-06-06T22:00:16+08:00">2022-06-06</time>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
       </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-06-06 22:27:53" itemprop="dateModified" datetime="2022-06-06T22:27:53+08:00">2022-06-06</time>
+    </span>
 
   
 </div>
