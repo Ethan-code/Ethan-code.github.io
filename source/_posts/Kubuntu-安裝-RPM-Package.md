@@ -12,5 +12,7 @@ tags:
 3. 成功後會跳出 deb 檔案產生訊息
   - 範例：`slack_4.23.0-1.1_amd64.deb generated`
 
+> 題外話：轉為 deb 版本所安裝的 slack 一更新就無法使用了，後來還是使用 snap 上的 slack
+
 ## 參考資料
 - [Install RPM packages on Ubuntu | Linuxize](https://linuxize.com/post/install-rpm-packages-on-ubuntu/)
